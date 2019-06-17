@@ -8,3 +8,6 @@ I intent is to solve these problems like we are in interview scenario.
 In an interview coming with a minimal answer (may not be most optimal solution) is more important than stuck yourself in finding the best optimal solution.
 
 So with that thought I am trying to solve these problem which will be like first idea/solution arise in our mind after saw any problem.
+
+*Tips
+Search by problem no in the repo to get the result
