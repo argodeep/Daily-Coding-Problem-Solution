@@ -1,6 +1,6 @@
 # Daily-Coding-Problem-Solution
 This is a  repo where I will try to solve Daily-Coding-Problem solution asked by different company across the world.
-Mostly I will try to solve them via JavaScript and few of them by python/C++ etc(You can ask for any langugage you want).
+Mostly I will try to solve them via JavaScript and few of them by python/C++ etc(You can ask for any language you want).
 
 I will happy to know your suggestions/more optimized solution e.g. less runtime etc.
 
