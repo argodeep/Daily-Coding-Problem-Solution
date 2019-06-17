@@ -19,9 +19,11 @@ let returnAngle = (time) => {
   let minutes = time.substr(3,5)
   
   let hourAngle = hour * anglePerHour;
+  console.log(hourAngle)
   let minutesAngle = minutes * anglePerMinutes;
-  if (hourAngle - minutesAngle > 180) {
-    let angleDifference = 360 - (hourAngle - minutesAngle);
+  console.log(minutesAngle)
+  if (Math.abs(hourAngle - minutesAngle) > 180) {
+    let angleDifference = 360 - Math.abs((hourAngle - minutesAngle));
     return Math.abs(angleDifference);
   } else {
     let angleDifference = hourAngle - minutesAngle;
@@ -60,6 +62,6 @@ for (var i = 1; i <= totalHour; i++) {
   }
 }
 
-var inputTime = '11:49';
+let inputTime = '01:55';
 console.log('For a given time ' + '"' + inputTime + '"' + ' nearest angle difference between hour & minute hands is ' + returnAngle(inputTime) + '\xB0');
 console.log('During course of the day angle between hour & minute hands will be zero on these clock time' + zeroAngles)
