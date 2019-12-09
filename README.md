@@ -11,3 +11,6 @@ So with that thought I am trying to solve these problem which will be like first
 
 *Tips
 Search by problem no in the repo to get the result
+
+Daily-Coding-Problem-Solution #303
+Daily-Coding-Problem-Solution #367
