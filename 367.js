@@ -1,4 +1,4 @@
-/* Daily Coding Problem: Problem #367 [Easy] */
+/* Daily Coding Problem: Problem #367 [MEDIUM] */
 
 /* PROBLEM DESCRIPTION
 
