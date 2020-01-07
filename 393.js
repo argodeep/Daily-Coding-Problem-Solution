@@ -11,30 +11,26 @@ For example, given the array [9, 6, 1, 3, 8, 10, 12, 11], return (8, 12) since 8
 let ar = [9, 6, 1, 2, 4, 3, 8, 10, 12, 11];
 
 function largestRange(arr) {
-  let range = [];
+  let longestRange = 0;
   let hash = {};
   arr.map(e => { hash[e] = e });
   for (let i = 0; i < arr.length; i++) {
-    let backup = [];
+    let currentRange = 0;
     let p = arr[i];
-    let n = arr[i];
+    let n = arr[i] + 1;
     while (hash[p]) {
-      if (backup.indexOf(p) === -1) {
-        backup.unshift(p);
-      }
+      currentRange += 1;
       p -= 1;
     }
-    while (hash[n + 1]) {
-      if (backup.indexOf(n + 1) === -1) {
-        backup.unshift(n + 1);
-      }
+    while (hash[n]) {
+      currentRange += 1;
       n += 1;
     }
-    if (backup.length > range.length) {
-      range = backup.sort((a, b) => a > b ? 1 : -1);
+    if (currentRange > longestRange) {
+      longestRange =  currentRange;
+      return [p+1, n-1]
     }
   }
-  return {start: range[0], end: range[range.length -1], length: range.length}
 }
 
 console.log(largestRange(ar))
